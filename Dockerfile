@@ -1,5 +1,7 @@
 FROM alpine
 
 RUN apk update
-RUN apk install bash
-RUN apk install curl
+RUN apk add bash
+RUN apk add curl
+
+ENTRYPOINT bash
